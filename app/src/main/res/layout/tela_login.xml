@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="285dp"
+        android:layout_height="223dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blue_modern_technology_company_logo_removebg_preview" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="380dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutEmail"
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+            android:layout_width="335dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="16dp"
+            android:hint="Email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditEmail"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="68dp"
+                app:boxStrokeColor="#FF914C"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutSenha"
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+            android:layout_width="335dp"
+            android:layout_height="90dp"
+            android:hint="Senha"
+            app:endIconMode="password_toggle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutEmail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditSenha"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="68dp"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Esqueceu a senha? e Cadastre-se alinhados nas extremidades -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutSenha"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/textViewEsqueceu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esqueceu a senha?"
+                android:textAppearance="?attr/textAppearanceBodyLarge"
+                android:textColor="#E4080A"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/textViewCadastreSe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cadastre-se"
+                android:textAppearance="?attr/textAppearanceBodyLarge"
+                android:textColor="#FF914C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="92dp"
+            android:text="Entrar"
+            app:backgroundTint="#FF781F"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

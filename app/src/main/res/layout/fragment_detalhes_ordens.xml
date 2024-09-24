@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".DetalhesOrdens"
+    android:background="?attr/colorSurface">
+
+    <!-- Título do serviço -->
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Título do serviço:"
+        android:textAppearance="?attr/textAppearanceTitleLarge"
+        android:textColor="?attr/colorOnSurface"
+        android:textStyle="bold" />
+
+    <!-- Descrição do serviço -->
+    <TextView
+        android:id="@+id/textViewDescricao1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Descrição do serviço:"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        android:textColor="?attr/colorOnSurface"
+        android:textStyle="bold" />
+
+    <!-- Descrição limitada a 256 caracteres -->
+    <TextView
+        android:id="@+id/textViewDescricao2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl augue, tristique ac semper non, iaculis dapibus enim. Fusce auctor convallis quam vel molestie. Aliquam commodo venenatis ultricies. Nullam id ultrices mi."
+        android:maxLength="256"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        android:textColor="?attr/colorOnSurface"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Status do serviço -->
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status do serviço: XXXXXXXXXX"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/textViewOrcamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orçamento do serviço: R$xxxx,xx"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        android:textColor="?attr/colorOnSurface"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Data de conclusão prevista -->
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data de conclusão prevista: xx/xx/xxxx"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        android:textColor="?attr/colorOnSurface"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Responsável pelo serviço -->
+    <TextView
+        android:id="@+id/textViewResponsavel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Responsável pelo serviço: xxxxxxxxxxxxxxxx"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        android:textColor="?attr/colorOnSurface"
+        android:layout_marginBottom="30dp" />
+
+
+
+    <!-- Nome e imagem do responsável lado a lado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:layout_marginBottom="20dp">
+
+        <!-- Imagem do responsável -->
+        <ImageView
+            android:id="@+id/imageViewResponsavel"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:contentDescription="Carlinhos Vaz"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/carlinhos_vaz"
+            android:background="@drawable/rounded_image"
+            android:clipToOutline="true"
+            android:elevation="4dp"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Nome do responsável -->
+        <TextView
+            android:id="@+id/textViewNomeResponsavel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome do usuário: Carlinhos Vaz"
+            android:textAppearance="?attr/textAppearanceBodyLarge"
+            android:textColor="?attr/colorOnSurface" />
+    </LinearLayout>
+
+    <!-- Orçamento do serviço -->
+
+
+    <!-- Botões alinhados horizontalmente -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="3dp">
+
+        <!-- Botão Editar -->
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar"
+            android:layout_marginEnd="8dp"
+            app:backgroundTint="#3366ff" />
+
+        <!-- Botão Excluir -->
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excluir"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#ff0000" />
+
+        <!-- Botão Mudar Status -->
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mudar Status"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp"
+            app:backgroundTint="#2DB626" />
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- Main content -->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_action_button_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            app:srcCompat="@drawable/outline_send_24"
+            app:backgroundTint="#FE9900"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>
