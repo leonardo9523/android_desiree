@@ -76,10 +76,11 @@
         android:id="@+id/textViewResponsavel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Responsável pelo serviço: xxxxxxxxxxxxxxxx"
-        android:textAppearance="?attr/textAppearanceBodyLarge"
+        android:text="Responsável pelo serviço:"
+        android:textAppearance="?attr/textAppearanceTitleLarge"
         android:textColor="?attr/colorOnSurface"
-        android:layout_marginBottom="30dp" />
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold" />
 
 
 
@@ -110,7 +111,7 @@
             android:id="@+id/textViewNomeResponsavel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nome do usuário: Carlinhos Vaz"
+            android:text="Carlinhos Vaz"
             android:textAppearance="?attr/textAppearanceBodyLarge"
             android:textColor="?attr/colorOnSurface" />
     </LinearLayout>
@@ -128,15 +129,23 @@
 
         <!-- Botão Editar -->
         <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
+            android:layout_width="90dp"
             android:layout_height="wrap_content"
             android:text="Editar"
             android:layout_marginEnd="8dp"
             app:backgroundTint="#3366ff" />
 
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Comentar"
+            android:visibility="visible"
+            app:backgroundTint="#3366ff" />
+
         <!-- Botão Excluir -->
         <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
+            android:layout_width="92dp"
             android:layout_height="wrap_content"
             android:text="Excluir"
             android:textColor="#FFFFFF"
@@ -144,9 +153,9 @@
 
         <!-- Botão Mudar Status -->
         <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
+            android:layout_width="90dp"
             android:layout_height="wrap_content"
-            android:text="Mudar Status"
+            android:text="Enviar"
             android:textColor="#FFFFFF"
             android:layout_marginStart="8dp"
             app:backgroundTint="#2DB626" />

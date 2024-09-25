@@ -85,11 +85,11 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textCliente"
+            android:id="@+id/textEmpresaResponsavel"
             style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Cliente"
+            android:hint="Empresa responsável"
             app:layout_constraintTop_toBottomOf="@id/textDate"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -109,7 +109,7 @@
             android:text="Criar serviço"
             android:layout_marginTop="16dp"
             app:backgroundTint="#FF781F"
-            app:layout_constraintTop_toBottomOf="@id/textCliente"
+            app:layout_constraintTop_toBottomOf="@id/textEmpresaResponsavel"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 

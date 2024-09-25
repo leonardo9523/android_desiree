@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EmpresasRelacionadas">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:strokeColor="?attr/colorOutline"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp">
+
+                <!-- Imagem do responsável -->
+                <ImageView
+                    android:id="@+id/imageViewResponsavel"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:contentDescription="Carlinhos Vaz"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/carlinhos_vaz"
+                    android:background="@drawable/rounded_image"
+                    android:clipToOutline="true"
+                    android:elevation="4dp"
+                    android:layout_marginEnd="16dp" />
+
+                <!-- Nome do responsável -->
+                <TextView
+                    android:id="@+id/textViewNomeResponsavel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carlinhos Vaz"
+                    android:textAppearance="?attr/textAppearanceBodyLarge"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="34sp" />
+            </LinearLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dividerInsetStart="16dp"
+                app:dividerInsetEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/textViewDetalhesEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detalhes da empresa"
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</FrameLayout>

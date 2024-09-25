@@ -43,6 +43,12 @@
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/carlinhos_vaz" />
 
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dividerInsetStart="16dp"
+                app:dividerInsetEnd="16dp"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -66,6 +72,12 @@
 
             </LinearLayout>
 
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dividerInsetStart="16dp"
+                app:dividerInsetEnd="16dp"/>
+
             <!-- Buttons -->
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -73,10 +85,12 @@
                 android:layout_margin="8dp"
                 android:orientation="horizontal">
 
+
+
                 <com.google.android.material.button.MaterialButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
+
                     android:text="Editar"
                     app:backgroundTint="#3366ff"/>
 
@@ -84,6 +98,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Excluir"
+                    android:textColorLink="#FF0000"
+                    app:backgroundTint="#ff0000"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceitar"
+                    android:textColorLink="#FF0000"
+                    app:backgroundTint="#7DDA58"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recusar"
                     android:textColorLink="#FF0000"
                     app:backgroundTint="#ff0000"/>
             </LinearLayout>
